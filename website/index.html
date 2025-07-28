@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Incision – Portfolio</title>
+    <!-- Google Font for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero section with navigation and introductory call‑to‑action -->
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Next&nbsp;Incision</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#assessment">Assessment</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#prep">Interview&nbsp;Prep</a></li>
+          <li><a href="#mentorship">Mentorship</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Next Incision</h1>
+        <p>
+          A platform for aspiring surgeons to develop, assess and elevate their
+          careers.
+        </p>
+        <a href="#assessment" class="btn btn-primary">Get Started</a>
+      </div>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Next&nbsp;Incision</h2>
+        <p>
+          Next&nbsp;Incision is a hub for medical students and resident doctors
+          interested in surgery. It offers tools to assess your portfolio
+          against national standards, provides AI‑assisted feedback and gives
+          you access to interview preparation and mentorship programmes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Assessment section -->
+    <section id="assessment" class="section">
+      <div class="container">
+        <h2>Portfolio Assessment</h2>
+        <p>
+          Complete the form below to see how your portfolio measures up against
+          the 2025 HEE surgical portfolio criteria. Your responses will be
+          evaluated against anonymised national averages along with averages
+          from your medical school and deanery.
+        </p>
+        <form class="assessment-form">
+          <h3>Enter your portfolio data</h3>
+          <div class="form-group">
+            <label for="research">Number of research publications</label>
+            <input type="number" id="research" name="research" min="0" placeholder="e.g. 3" required />
+          </div>
+          <div class="form-group">
+            <label for="audits">Completed audits/quality improvement projects</label>
+            <input type="number" id="audits" name="audits" min="0" placeholder="e.g. 2" required />
+          </div>
+          <div class="form-group">
+            <label for="teaching">Teaching sessions delivered</label>
+            <input type="number" id="teaching" name="teaching" min="0" placeholder="e.g. 5" required />
+          </div>
+          <div class="form-group">
+            <label for="leadership">Leadership roles held</label>
+            <input type="number" id="leadership" name="leadership" min="0" placeholder="e.g. 1" required />
+          </div>
+          <div class="form-group">
+            <label for="exams">Relevant exam scores (e.g. MRCS)</label>
+            <input type="text" id="exams" name="exams" placeholder="e.g. Pass / Score" required />
+          </div>
+          <button type="submit" class="btn btn-secondary">Submit Assessment</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Dashboard section -->
+    <section id="dashboard" class="section">
+      <div class="container">
+        <h2>User Dashboard</h2>
+        <p>
+          Track your progress with gamified insights. Compare your scores to the
+          national average and earn badges as you strengthen your portfolio.
+        </p>
+        <div class="dashboard-grid">
+          <div class="dashboard-card">
+            <h4>Your Score</h4>
+            <p>80%</p>
+          </div>
+          <div class="dashboard-card">
+            <h4>National Average</h4>
+            <p>75%</p>
+          </div>
+          <div class="dashboard-card">
+            <h4>Badges Earned</h4>
+            <p>Research Star, Teaching Mentor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interview prep section -->
+    <section id="prep" class="section">
+      <div class="container">
+        <h2>Interview Preparation</h2>
+        <p>
+          Prepare for your surgical interviews with AI‑assisted mock questions and
+          model answers. Practise scenario‑based questions and receive tips on
+          how to structure your responses.
+        </p>
+        <div class="prep-container">
+          <h3>Example Interview Question</h3>
+          <p><strong>Scenario:</strong> Describe a time you managed a complication in the operating theatre. How did you handle the situation and what did you learn?</p>
+          <p><em>Tip:</em> Use the STAR (Situation, Task, Action, Result) method to structure your answer.</p>
+          <button class="btn btn-secondary" type="button">Start Practice</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship section -->
+    <section id="mentorship" class="section">
+      <div class="container">
+        <h2>Mentorship Matching</h2>
+        <p>
+          Connect with experienced surgeons who can guide you on your career
+          journey. Use the form below to tell us your interests and we’ll match
+          you with a mentor.
+        </p>
+        <div class="mentorship-container">
+          <form class="assessment-form">
+            <div class="form-group">
+              <label for="specialty">Preferred surgical specialty</label>
+              <input type="text" id="specialty" name="specialty" placeholder="e.g. Orthopaedics" required />
+            </div>
+            <div class="form-group">
+              <label for="level">Current training level</label>
+              <input type="text" id="level" name="level" placeholder="e.g. FY2, CT1" required />
+            </div>
+            <div class="form-group">
+              <label for="goals">What do you hope to achieve?</label>
+              <textarea id="goals" name="goals" rows="4" placeholder="Briefly describe your goals" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Find Mentor</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have a question or want to collaborate? Feel free to reach out via the
+          form below or send an email directly to
+          <a href="mailto:hello@example.com">hello@example.com</a>.
+        </p>
+        <form
+          class="contact-form"
+          action="mailto:hello@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Next Incision. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
